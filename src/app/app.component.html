@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 ">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" style="color: teal;">Simce</a>
+        
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/users">Users</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/servers">Servers</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/createUser">CreateUser</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a class="nav-link" routerLink="/createServer">CreateServers</a>
+          </li>       
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>  
